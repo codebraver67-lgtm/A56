@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring Assignment</title>
+</head>
+<body>
+    <h2>User Information</h2>
+    <p id="name"></p>
+    <p id="age"> </p>
+    <p id="city"></p>
+
+    <script>
+        // User information stored directly in an object
+        const user = {
+            name: "Amal",
+            age: 16,
+            city: "Beirut"
+        };
+
+        // Destructure the object
+        const { name, age, city } = user;
+
+        // Display the information in HTML
+        document.getElementById("name").textContent = `Name: ${name}`;
+        document.getElementById("age").textContent = `Age: ${age}`;
+        document.getElementById("city").textContent = `City: ${city}`;
+    </script>
+</body>
+</html>
